@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+.page_turn{
+	margin: 40px 0;
+}
+.intro{
+	padding: 30px 50px;
+}
+.intro .fr{
+	width: 400px;
+}
+.intro .fr a{
+	display: inline-block;
+	margin-top: 40px;
+	width: 29px;
+	height: 21px;
+	border-radius: 50%;
+	padding-top: 8px;
+	border: 2px solid hsl(240, 1%, 74%);
+	background: url(../images/next.png) no-repeat center;
+}
+.intro .fr a:hover{
+	border-color: hsl(189, 85%, 46%);
+	background: url(../images/next.1.png) no-repeat center;
+}
+.intro .fr .p1{
+	font-size: 2.4rem;
+	color: hsl(0°, 0%, 0%);
+}
+.intro .fr .p2{
+	font-size: 1.8rem;
+	color: hsl(240, 4%, 28%);
+}
+.intro .fr hr{
+	margin: 20px 0;
+}
+.product_list_group{
+	padding: 50px 0;
+	border-bottom: 1px solid hsl(0, 0%, 75%);
+	background-color: hsl(0, 0%, 90%);
+}
+.product_list_group .center_block{
+	position: relative;
+}
+.product_list_group .fadeIn{
+	width: 85px;
+	height: 290px;
+	padding: 10px;
+	position: absolute;
+	left: -120px;
+	bottom: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	background-color: hsl(0, 0%, 65%);
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+}
+.product_list_group .fadeIn a{
+	color: hsl(0, 0%, 100%);
+	font-size: 2rem;
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	margin-bottom: 22px;
+}
+.product_list_group .fadeIn .fadeIn1{
+	margin-bottom: 31px;
+	background: url(../images/34.png) no-repeat 65px center;
+}
+.product_list_group .fadeIn .fadeIn2{
+	background: url(../images/35.png) no-repeat 63px center;
+}
+.product_list_group .fadeIn .fadeIn3{
+	background: url(../images/36.png) no-repeat 65px center;
+}
+.product_list_group .fadeIn .fadeIn4{
+	background: url(../images/37.png) no-repeat 64px center;
+}
+.product_info{
+	width: 32%;
+	border: 1px solid transparent;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 730px;
+}
+.product_info.center{
+	margin: 0 1%;
+}
+.product_info .product_info_logo{
+	position: absolute;
+	left: -5px;
+	top: -5px;
+	width: 90px;
+}
+.product_info .title{
+	font-size: 2.6rem;
+	text-align: center;
+	color: hsl(0, 0%, 7%);
+	padding: 40px 0 20px 0;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.product_info img{
+	width: 210px;
+	margin: 0 auto;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.product_info_intro{
+	padding: 20px;
+	height: 40px;
+	margin-top: 0;
+	position: relative;
+	border-top: 0px solid transparent;
+	border-bottom: 20px solid hsl(189, 97%, 43%);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.product_info_intro .wz{
+	width: 76%;
+	word-break: break-all;
+	position: absolute;
+	left: 40px;
+	top: 20px;
+	font-size: 1.6rem;
+	color: hsl(0, 1%, 51%);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.product_info_intro .jt{
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 29px;
+	height: 21px;
+	border-radius: 50%;
+	padding-top: 8px;
+	margin-top: 4px;
+	position: absolute;
+	left: -30px;
+	top: 20px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	border: 2px solid hsl(0, 0%, 100%);
+	background: url(../images/arrow_right_white.png) no-repeat center;
+}
+.product_info .p{
+	margin: 25px;
+	padding-left: 25px;
+	font-size: 2.2rem;
+	line-height: 2rem;
+	color: hsl(0, 0%, 4%);
+	position: relative;
+	left: 16px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	background: url(../images/38.png) no-repeat left center;
+}
+.product_info .datasheet{
+	text-align: center;
+	padding: 25px 0;
+}
+.product_info .datasheet a{
+	display: inline-block;
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: hsl(0, 100%, 99%);
+	border-radius: 20px;
+	background-color: hsl(240, 2%, 24%);
+}
+.product_info:hover{
+	border-color: hsl(0, 0%, 79%);
+	background-color: hsl(0, 0%, 100%);
+}
+.product_info:hover .title{
+	padding-bottom: 0;
+}
+.product_info:hover img{
+	width: 205px;
+}
+.product_info:hover .product_info_intro{
+	margin-top: 4px;
+	border-top: 20px solid hsl(128, 58%, 52%);
+	border-bottom: 20px solid hsl(128, 58%, 52%);
+	background-color: hsl(128, 58%, 52%);
+}
+.product_info:hover .product_info_intro .wz{
+	left: 20px;
+	color: hsl(0, 0%, 100%);
+}
+.product_info:hover .product_info_intro .jt{
+	left: 85%;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.product_info:hover .p{
+	left: -4px;
+}

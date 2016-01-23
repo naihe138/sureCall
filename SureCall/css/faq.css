@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.page_turn{
+	margin: 40px auto;
+}
+.faq_center_block{
+	width: 860px;
+	margin: 0 auto;
+	position: relative;
+}
+.faq_center_block .links{
+	padding-left: 0;
+	margin: 0;
+	height: 34px;
+	line-height: 34px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+.faq_search_row{
+	margin: 0;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+.faq_search_row input[type=text]{
+	width: 618px;
+	height: 18px;
+	font-size: 1.4rem;
+	color: hsl(0, 0%, 51%);
+	padding: 7px 45px;
+	background-color: hsl(0, 0%, 93%);
+	border: 1px solid hsl(0, 0%, 71%);
+	position: relative;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.faq_search_row input[type=submit]{
+	width: 105px;
+	height: 30px;
+	margin: 0 20px;
+	font-size: 1.4rem;
+	color: hsl(0, 0%, 100%);
+	vertical-align: middle;
+	border-radius: 18px;
+	background-color: hsl(128, 58%, 52%);
+}
+.faq_list .faq_even_row,
+.faq_list .faq_base_row{
+	padding: 50px 0;
+}
+.faq_list .faq_even_row{
+	background-color: hsl(0, 0%, 93%);
+}
+.faq_list li{
+	margin: 20px 0;
+	overflow: hidden;
+	word-break: break-all;
+}
+.faq_list li .faq_list_title{
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	background-color: hsl(189, 97%, 43%);
+	transition: background-color 0.3s ease-in-out;
+	-webkit-transition: background-color 0.3s ease-in-out;
+}
+.faq_list li .faq_list_title:active{
+	background-color: hsl(128, 58%, 52%);
+}
+.faq_list li .faq_list_title a{
+	word-break: break-all;
+	padding: 0 22px;
+	font-size: 1.8rem;
+	color: hsl(0, 0%, 100%);
+}
+.faq_list li .faq_list_title span{
+	display: inline-block;
+	margin-top: 12px;
+	margin-right: 15px;
+}
+.faq_list li .p{
+	display: none;
+}
+.faq_list li .p p{
+	font-size: 1.5rem;
+	color: hsl(0, 0%, 9%);
+	padding: 5px 10px;
+}
+/*新增-1.16*/
+.faq_list{margin-top:3%;}
+.faq_video_row{padding: 50px 0; background-color: hsl(0, 0%, 93%); width:100%; height:380px;}
+.faq_video_center{ margin:0px auto; width:1050px;}
+.faq_video_left{ position: relative;  float:left; width:640px; height:353px; border:2px solid #a0a0a0; background: #000; margin:0px 20px 0px 30px;}
+.faq_video_left #myVideo{width:640px; height:353px; }
+.faq_video_right{float: left; width:310px; height:300px; margin-top:40px;}
+.faq_video_right h2{ border-bottom: 1px solid #A0A0A0; padding-bottom: 15px;}
+.faq_video_right p{color:#444449; margin-top:10px; font-weight: bold; line-height: 22px; font-size: 1.8rem;} 
+.faq_video_base{ margin:0px auto; width:1050px; padding: 50px 0px 0px 0px; height: 670px;}
+.faq_video_base li{margin:45px 23px; float: left; background: #eeeeee; width:302px; height:280px; text-align: center;
+ transition:background 0.3s;
+-moz-transition:background 0.3s; /* Firefox 4 */
+-webkit-transition:background 0.3s; /* Safari and Chrome */
+-o-transition:background 0.3s; /* Opera */
+}
+.faq_video_base li:hover{background:#03b9d9;}
+.faq_video_base li .row1{position:relative;}
+.faq_video_base li .active{ position: absolute; width:60px; height: 60px; top: 55px;  left:121px; } 
+.faq_video_base li img{ cursor: pointer; width:302px ; height: 170px;} 
+.faq_video_base li h3{ font-size: 1.8rem; line-height: 24px; padding: 0px 10px;}
+.faq_video_base li p{font-size: 1.2rem; color:#7d7d7d;}
+
+.faq_video_base li h3,.faq_video_base li p{
+	 transition:color 0.3s;
+    -moz-transition:color 0.3s; /* Firefox 4 */
+    -webkit-transition:color 0.3s; /* Safari and Chrome */
+    -o-transition:color 0.3s; 
+}
+.faq_video_base li:hover h3,.faq_video_base li:hover p{ color: #fff;}
+
+/*弹窗*/
+
+.showRight{padding: 10px;  position:absolute; z-index: 99999; display: none; width:660px; height:370px;  background:#000; border-radius: 5px;}
+.showRight #myVideo{width:620px; height:280px; border:2px solid #a0a0a0; margin-left:19px;}
+.reveal-modal-bg {   
+	z-index: 100;   
+	position: fixed;
+    filter: alpha(opacity=60) !important;
+    width: 100%;
+    display: none;
+    background: #000;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+.closebtn{ 
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 2px solid hsl(260, 1%, 41%);
+    float: right;
+   margin-bottom:10px;
+}
+.closebtn img{
+	    display: block;
+        margin: 4px 0 0 4px;
+}
+
+
+
+

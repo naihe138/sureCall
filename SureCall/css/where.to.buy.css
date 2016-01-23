@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+.map{
+	padding: 30px 0 0;
+	overflow: hidden;
+	background-color: hsl(0, 0%, 90%);
+}
+.map .center_block{
+	position: relative;
+}
+.map .s_city{
+	text-align: center;
+	margin-bottom: 20px;
+	visibility: hidden;
+}
+.map .s_city div{
+	display: inline-block;
+	vertical-align: top;
+}
+.map .s_city input[type=text],
+.input1 input[type=text],.input2 input[type=text]{
+	padding: 10px;
+	width: 248px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 1.8rem;
+	color: hsl(0, 0%, 44%);
+	border-radius: 5px;
+	vertical-align: top;
+	margin: 0 10px;
+	border: 1px solid hsl(0, 0%, 44%);
+}
+.map .s_city input[type=radio],
+.map .s_city label{
+	vertical-align: -10px;
+	margin: 0 3px;
+}
+.map .map_pic img{
+	margin: 0 auto;
+}
+.map .map_pic .canada{
+	cursor: pointer;
+	position: relative;
+}
+.map .map_pic .us{
+	cursor: pointer;
+	position: relative;
+	left: 40px;
+	top: -95px;
+}
+.map .map_pic .canada span{
+	position: absolute;
+	font-size: 4rem;
+	color: hsl(0, 0%, 100%);
+	left: 45%;
+	bottom: 70px;
+}
+.map .map_pic .us span{
+	position: absolute;
+	font-size: 4rem;
+	color: hsl(0, 0%, 100%);
+	left: 45%;
+	top: 90px;
+}
+.preferred_resellers{
+	background-color: hsl(0, 0%, 90%);
+}
+.master_resellers,
+.preferred_resellers{
+	padding-bottom: 50px;
+}
+.master_resellers .title,
+.preferred_resellers .title{
+	text-align: center;
+	font-size: 3rem;
+	padding: 30px 0;
+	color: hsl(189, 97%, 43%);
+	border-bottom: 1px dashed hsl(0, 3%, 78%);
+}
+.master_resellers .forMap .show,
+.preferred_resellers .forMap .show{
+	display: none;
+	text-align: center;
+	padding-top: 30px;
+}
+.master_resellers .forMap .show a,
+.preferred_resellers .forMap .show a{
+	display: inline-block;
+	margin: 15px;
+	max-width: 80%;
+}
+.master_resellers .forMap .show:first-child,
+.preferred_resellers .forMap .show:first-child{
+	display: block;
+}
+.whereToBuy_block{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -350px;
+	margin-top: -250px;
+	border: 10px solid hsla(0, 0%, 0%, 0.2);
+}
+.whereToBuy_block form{
+	width: 580px;
+	height: 450px;
+	padding: 30px 50px 0;
+	background-color: hsl(0, 0%, 100%);
+}
+.whereToBuy_block .title{
+	font-size: 1.8rem;
+	color: hsl(201, 61%, 48%);
+}
+.whereToBuy_block .title+p,
+.whereToBuy_block .input_name{
+	font-size: 1.2rem;
+	color: hsl(0, 0%, 27%);
+	padding: 6px 0;
+}
+.whereToBuy_block .input_name:before{
+	content: '* ';
+	font-size: 1.2rem;
+	line-height: 0;
+	vertical-align: -2px;
+	color: hsl(29, 98%, 48%);
+}
+.whereToBuy_block .fl,
+.whereToBuy_block .fr{
+	width: 260px;
+}
+.whereToBuy_block input{
+	width: 238px;
+	height: 16px;
+	line-height: 16px;
+	padding: 2px 10px;
+	color: hsl(0, 0%, 27%);
+	border-radius: 3px;
+	border: 1px solid hsl(0, 0%, 84%);
+}
+.whereToBuy_block .w{
+	width: auto !important;
+}
+.whereToBuy_block .w input{
+	width: 88px;
+	vertical-align: middle;
+}
+.whereToBuy_block .w img{
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.whereToBuy_block input[type=submit]{
+	width: 73px;
+	height: 28px;
+	margin-top: 20px;
+	color: hsl(0, 1%, 35%);
+	background-image: url(../images/60.png);
+	border-color: hsl(0, 0%, 93%);
+}
+.inmap{
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	width: 100%;
+	height: 692px;
+}

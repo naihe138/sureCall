@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+.about_us,.whySureCall{
+	background-color: hsl(0, 0%, 90%);
+}
+.about_us .content{
+	padding: 50px;
+}
+.title{
+	font-size: 3.6rem;
+	text-align: center;
+}
+.about_us p{
+	margin-top: 20px;
+	font-size: 2rem;
+	color: hsl(0, 0%, 33%);
+}
+.about_us .theLinks{
+	margin-top: 30px;
+	text-align: center;
+}
+.about_us .theLinks a{
+	display: inline-block;
+	width: 30%;
+	margin: 0 1%;
+}
+.howItWorks .title a{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.howItWorks .content{
+	padding: 50px 30px 100px;
+}
+.howItWorks p{
+	margin: 30px 0;
+	text-align: center;
+	color: hsl(0, 0%, 26%);
+}
+.howItWorks .tabControl{
+	width: 100%;
+	position: relative;
+}
+.howItWorks .tabControl .tab_block img{
+	display: none;
+	margin: 0 auto;
+}
+.howItWorks .tabControl .tab_block img:first-child{
+	display: block;
+}
+.howItWorks .tabControl .tab_row{
+	position: absolute;
+	top: 3%;
+	left: 2%;
+	width: 96%;
+	height: 60px;
+	text-align: center;
+	white-space: nowrap;
+}
+.howItWorks .tabControl .tab_row li{
+	display: inline-block;
+	width: 19%;
+	height: 52px;
+	line-height: 52px;
+	font-size: 2rem;
+	cursor: pointer;
+	overflow: hidden;
+	color: hsl(0, 0%, 3%);
+	border-bottom: 8px solid hsl(128, 58%, 52%);
+}
+.howItWorks .tabControl .tab_row li.on{
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(189, 97%, 41%);
+	border-bottom-color: hsl(189, 97%, 41%);
+}
+.whySureCall .content{
+	padding: 0 30px 50px;
+}
+.whySureCall .title{
+	padding: 15px 0;
+}
+.whySureCall .content p{
+	font-size: 2rem;
+	margin-bottom: 25px;
+	color: hsl(0, 0%, 26%);
+}
+.whySureCall .content .white_board{
+	padding: 30px 20px 0;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 0 2px 2px 1px hsl(0, 0%, 45%);
+}
+.whySureCall .col{
+	width: 45%;
+}
+.whySureCall .wbr_name a{
+	display: block;
+	font-size: 2.4rem;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: hsl(189, 97%, 43%);
+}
+.whySureCall .wbr_content{
+	color: hsl(0, 0%, 54%);
+	margin-bottom: 70px;
+}
+.iframe{
+	display: none;
+	width: 90%;
+	height: 90%;
+	position: fixed;
+	left: 5%;
+	top: 5%;
+	border-radius: 10px;
+	background-color: hsl(0, 0%, 100%);
+}
+.iframe iframe{
+	margin-left: 5%;
+	border: 0;
+}
+.iframe a{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
