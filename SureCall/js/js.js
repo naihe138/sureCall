@@ -127,7 +127,8 @@ function removeElement(_element){
 }
 
 function loading(){
-	var arr = ["banner1.jpg", "banner2.jpg", "banner3.jpg","1.1.png", "1.png", "2.1.png", "2.png", "3.1.png", "3.png", "4.1.png", "4.png", "5.1.png", "5.png", "tower.png", "round.png", "mobile.png", "signal.png", "phoneImg.jpg", "6.png", "6.1.png", "9.png", "9.1.png", "12.png", "12.1.png", "13.png", "13.1.png", "10.png", "10.1.png", "7.png", "7.1.png", "11.png", "11.1.png", "8.png", "8.1.png","14.png","15.png"];
+	//var arr = ["banner1.jpg", "banner2.jpg", "banner3.jpg","1.1.png", "1.png", "2.1.png", "2.png", "3.1.png", "3.png", "4.1.png", "4.png", "5.1.png", "5.png", "tower.png", "round.png", "mobile.png", "signal.png", "phoneImg.jpg", "6.png", "6.1.png", "9.png", "9.1.png", "12.png", "12.1.png", "13.png", "13.1.png", "10.png", "10.1.png", "7.png", "7.1.png", "11.png", "11.1.png", "8.png", "8.1.png","14.png","15.png"];
+	var arr = ["banner1.jpg", "banner2.jpg", "banner3.jpg","1.1.png", "10.1.png", "7.png", "7.1.png", "11.png", "11.1.png", "8.png", "8.1.png","14.png","15.png"];
 	var iNow = 0;
 	var loadingBox = e(".loadingBox");
 	
@@ -144,15 +145,15 @@ function loading(){
 			if(iNow>=len){
 				
 				//loadingBox.style.display = "none";
-				//removeElement(loadingBox);
-				//toLoad();
+				removeElement(loadingBox);
+				toLoad();
 			}
 			
 		}
 		objImg.onerror = function(){
 			//loadingBox.style.display = "none";
-			//removeElement(loadingBox);
-			//toLoad();
+			removeElement(loadingBox);
+			toLoad();
 		}
 		
 	}
@@ -160,8 +161,8 @@ function loading(){
 }
 
 window.onload = function(){
-	//loading();
-	toLoad();
+	loading();
+	//toLoad();
 }
 
 
